@@ -1,3 +1,5 @@
+// This file is irrelevant. Failed attempts to scramble the code together.
+
 function rando() {
   return Math.floor(Math.random() * 3) + 1;
 }
