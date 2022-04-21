@@ -54,6 +54,7 @@ function reload() {
 }
 
 function repeat() {
+  console.clear();
   for (let i = 1; i < 6; i++) {
     console.log("");
     console.log("%cRound", "font-weight: bold", +i);
@@ -82,11 +83,13 @@ function repeat() {
       "color:green; font-weight: bold"
     );
   } else if (playerScore == computerScore) {
-    console.log("It's a tie!");
+    console.log("%cIt's a tie!", "font-weight: bold");
   } else {
     console.log(
       "%cWhat is even happening right now?",
       "color: blue; font-size: 120px"
     );
   }
+  playerScore = 0;
+  computerScore = 0;
 }
